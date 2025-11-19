@@ -1,0 +1,35 @@
+body {
+	background-color: #111;
+	margin: 0;
+	padding: 40px;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	color: #eee;
+	box-shadow: 0 0 18px 2px #222 inset;
+}
+h1 {
+	color: #fff;
+	background: linear-gradient(90deg, #222 60%, #333 100%);
+	padding: 18px 0;
+	border-radius: 10px;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 32px;
+	box-shadow: 0 2px 12px #222;
+}
+a {
+	display: inline-block;
+	margin: 12px 0;
+	padding: 10px 22px;
+	background: #222;
+	color: #4fc3f7;
+	border-radius: 6px;
+	text-decoration: none;
+	font-size: 1.08em;
+	box-shadow: 0 2px 8px #222;
+	transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+a:hover {
+	background: #333;
+	color: #81d4fa;
+	transform: translateY(-2px) scale(1.04);
+}

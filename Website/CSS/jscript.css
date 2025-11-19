@@ -1,0 +1,46 @@
+body {
+    background-color: White;
+    margin: 40px;
+    padding: 30px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0 0 16px 2px #ccc;
+    border-radius: 12px;
+}
+h1 {
+    color: DarkGreen;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+p {
+    color: Black;
+    margin-bottom: 18px;
+    font-size: 1.08em;
+}
+p#Del-ts {
+    color: darkgreen;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.home-btn {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 10px 22px;
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    text-decoration: none;
+    box-shadow: 0 2px 8px #bbb;
+    transition: background 0.2s;
+}
+.home-btn:hover {
+    background-color: #2e7031;
+    color: #e0ffe0;
+}
+.home-btn:active {
+    box-shadow: 0 1px 4px #aaa;
+    transform: translateY(2px);
+}
