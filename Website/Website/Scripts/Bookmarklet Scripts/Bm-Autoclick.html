@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmarklet Scripts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bookmarklet scripts for fun and automation.">
+    <link rel="stylesheet" href="../../CSS/bmark.css">
+</head>
+<body>
+    <div class="bookmarklet-page">
+        <h1 class="bookmarklet-title">Bookmarklet Scripts</h1>
+            <a href="Index.htm" target="_self" class="home-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4fc3f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M3 9l9-7 9 7"/><path d="M9 22V12h6v10"/></svg>
+            Return to Home
+        </a>
+        <a href="Scripts/Index.html" target="_self" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4fc3f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M15 18l-6-6 6-6"/></svg>
+            Back to Scripts Homepage
+        </a>
+        <div class="bookmarklet">
+            <div class="bookmarklet-main">Autoclicker Bookmarklet</div>
+            <div class="bookmarklet-desc">Autoclicker that works using chrome bookmarks</div>
+            <code style="word-break:break-all; background:#222; color:#81d4fa; padding:6px 10px; border-radius:5px; display:block;">javascript:window.autoclicker=setInterval(()=>{const e=document.elementFromPoint(window._acX,window._acY);if(e)e.click();},100);console.log('Autoclicker started. Move mouse to target, press p to set position.');document.onkeydown=ev=>{if(ev.key==='p'){window._acX=ev.clientX;window._acY=ev.clientY;console.log(`Autoclicking at X:${window._acX} Y:${window._acY}`);}}</code>
+        </div>
+        <footer class="bookmarklet-footer">
+            <p>These bookmarklet scripts are for fun and automation. Use responsibly!</p>
+        </footer>
+    </div>
+    <p style="margin:24px 0; color:#4fc3f7; font-size:1.08em; background:#181818; border-radius:8px; padding:18px 20px; box-shadow:0 2px 8px #222;">
+        <strong>Chrome Autoclicker Bookmarklet:</strong><br>
+        Drag the link below to your bookmarks bar, then click it on any page to start autoclicking.<br><br>
+        <a href="javascript:(function(){window.autoclicker=setInterval(function(){var e=document.elementFromPoint(window._acX,window._acY);if(e)e.click();},100);console.log('Autoclicker started. Move mouse to target, press p to set position.');document.onkeydown=function(ev){if(ev.key==='p'){window._acX=ev.clientX;window._acY=ev.clientY;console.log('Autoclicking at X:'+window._acX+' Y:'+window._acY);}}})();" style="color:#81d4fa; font-weight:bold;">Autoclicker Bookmarklet</a>
+        <br><br>
+        <em>How to use:</em> After clicking the bookmarklet, move your mouse to the element you want to click, then press <strong>p</strong> to set the autoclick position. The script will click every 100ms at that spot.
+    </p>
+</body>
+</html>
